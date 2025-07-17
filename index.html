@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Resizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Image Resizer</h1>
+    <input type="file" id="upload" accept="image/*" />
+    <div class="controls">
+      <label>Width: <input type="number" id="width" /></label>
+      <label>Height: <input type="number" id="height" /></label>
+      <button id="resizeBtn">Resize</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <a id="download" download="resized-image.png">Download Resized Image</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
